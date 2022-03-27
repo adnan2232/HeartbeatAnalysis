@@ -7,3 +7,9 @@ from django.shortcuts import render
 
 def homepage(req):
     return render(req,"index.html")
+
+
+def temp(req):
+    button = req.POST["textArea"]
+    print(req.body)
+    return render(req,"temporary.html",context = {"text":button})

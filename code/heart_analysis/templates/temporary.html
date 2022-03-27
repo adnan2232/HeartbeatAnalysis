@@ -7,17 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{%static 'core.css'%}">
     <script src="{%static 'core.js'%}"></script>
-    <title>Schedule</title>
+    <title>Temporary</title>
 </head>
 <body>
-    <p>Hello World</p>
+    <p>
+        {{text}}
+    </p>
 
-    <form action="{%url 'temp'%}" method="POST">
-        {% csrf_token %}
-        <input type="input" name="textArea">
-        <input type="submit" name="submitButton">
-    </form>
  
 </body>
-
 </html>
