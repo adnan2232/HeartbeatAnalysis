@@ -11,5 +11,6 @@ def homepage(req):
 
 def temp(req):
     button = req.POST["textArea"]
-    print(req.body)
-    return render(req,"temporary.html",context = {"text":button})
+    inputFile = req.POST["inputFile"]
+
+    return render(req,"temporary.html",context = {"variable": 25})
