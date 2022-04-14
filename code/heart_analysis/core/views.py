@@ -21,19 +21,18 @@ def temp(req):
     file = req.FILES["inputFile"]
     y, sr = librosa.load(file, sr=16000)
     print(y.shape)
-    mfcc = np.mean(librosa.feature.mfcc(y, sr, n_mfcc=40).T, axis=0)
-    print(mfcc.shape)
-    res = LSTM(mfcc)
-    print(res)
-    context = {
-        "res" : res
-    }
-    return render(req, "temporary.html",context=context)
+    mfccs = np.mean(librosa.feature.mfcc(y,sr,n_mfcc=40).T,axis=0)
+    print(mfccs.shape)
+    mfccs.reshape((-1,1))
+    print(mfccs.shape)
+    mfccs = np.reshape(mfccs, (1,40,1))
+    result = LSTM(mfccs)
+    return render(req, "temporary.html",context={"shape":mfccs.shape,"result":result,"y":y})
 
-    # return render(req,"temporary.html",context = {"variable": 25})
+
 
 def LSTM(mfcc):
-    path = 'D:\Python Projects\HeartBeatAnalysis\LSTM\model_checkpoints.hdf5'
-    model = load_model(path)
+    model = load_model(r"C:\Users\adnan\OneDrive\Desktop\HeartAnalysis\Data\model_checkpoints.hdf5")
     predictions = model.predict(mfcc)
+    print(mfcc.shape)
     return predictions
