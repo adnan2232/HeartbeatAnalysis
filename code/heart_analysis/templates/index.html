@@ -1,4 +1,4 @@
-{% load static%}
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,21 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="{%static 'core.css'%}">
+    <link rel="stylesheet" href="{%static core.css%}">
     <script src="{%static 'core.js'%}"></script>
     <title>Schedule</title>
 </head>
 <body>
-    <p>Hello World</p>
-    <!-- <input name = "inputFile" id = "input-file" type="file"  />
-    <input type="submit" name="submitButton" onclick="sendFile()"> -->
-
 
     <form action="{%url 'temp'%}" method="POST" enctype="multipart/form-data" >
         {% csrf_token %}
         <input  type="file" name = "inputFile" id = "input-file" />
-        <input type="input" name="textArea">
-        <input type="submit" name="submitButton">
+        <input class="btn" type="submit" name="submitButton">
     </form>
 
     <script>
