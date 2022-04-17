@@ -1,33 +1,57 @@
 {%load static%}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{%static 'core.css'%}">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="{%static 'core.css'%}">
     <script src="{%static 'core.js'%}"></script>
     <title>Schedule</title>
 </head>
+
 <body>
 
-    <form action="{%url 'temp'%}" method="POST" enctype="multipart/form-data" >
-        {% csrf_token %}
-        <input  type="file" name = "inputFile" id = "input-file" />
-        <input class="btn" type="submit" name="submitButton">
-    </form>
+    <nav>
+        <div class="navbar">
+          <!-- <img class="logo" src="/" alt="logo" /> -->
+          <h1 class="logo">Logo</h1>
+        </div>
+        <ul class="nav_links">
+          <li><a href="#">About</a></li>
+          <li class="signup_li"><a class="signup" href="/signup">Sign Up</a></li>
+          <li class="login_li"><a class="login" href="/login">login</a></li>
+        </ul>
+      </nav>
+
+    <div class="basic">
+        <img class="heart-img" src="static/images/herat-img3.jpg" alt="">
+    </div>
+
+
+    <div class="formDiv">
+        <h3> Sound Input</h3>
+        <form class="form" action="{%url 'temp'%}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file" name="inputFile" id="input-file" /><br>
+            <input class="btn btn--red" type="submit" name="submitButton">
+        </form>
+    </div>
+
+
 
     <script>
-        function sendFile(){
+        function sendFile() {
             const url = $("#input-file").value;
             const formData = document.getElementById['inputFile'].value;
             console.log(url);
             console.log(formData);
         }
     </script>
- 
+
 </body>
 
 </html>
