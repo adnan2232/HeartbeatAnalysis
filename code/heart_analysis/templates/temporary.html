@@ -11,10 +11,12 @@
 </head>
 <body>
 
-    <p>
-        {{category}} : {{value}}
-    </p>
-
+    <div>
+        {%for key,value in lstm.items%}
+            {{key}}: {{value}}
+        {% endfor%}
+    </div>
+ 
     
 
     <!-- <p>
