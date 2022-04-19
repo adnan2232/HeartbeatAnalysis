@@ -11,9 +11,10 @@
 </head>
 <body>
 
-    <div>
+    <div id="pred">
         {%for key,value in lstm.items%}
-            {{key}}: {{value}}
+            <p>{{key}}:</p>
+            <p>{{value}}</p>
         {% endfor%}
     </div>
  

@@ -35,7 +35,8 @@ nav {
 }
 
 .logo {
-    width: 4rem;
+    /* width: 5rem; */
+    width: 20rem;
     margin: 0.5rem 0.5rem;
     margin-left: 10vw;
 }
@@ -139,6 +140,90 @@ nav {
     right: 20rem;
 }
 
+/* ABOUT SECTION */
+
+#about {
+    display: block;
+    font: 400 16px/1.6;
+    color: #000203;
+    letter-spacing: 0px;
+  }
+  .full-block {
+    padding: 30px 20px 20px;
+  }
+  .title-section {
+    display: block;
+    text-align: center;
+}
+.how-to-row:first-child {
+  padding: 0 0 50px;
+}
+.how-to-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+.how-to-item {
+  display: block;
+  max-width: 530px;
+  width: 100%;
+  padding: 0 15px;
+  text-align: left;
+}
+.number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  min-width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  border: 2px solid;
+  /* font: 700 17px/1 "Poppins",sans-serif; */
+  letter-spacing: 0.34px;
+  margin: 0px 16px 0 0;
+  border-color: #141850;
+}
+.number {
+  color: #141850;
+}
+.number {
+  border-color: #141850;
+}
+.how-to-section .how-to-item .item-title h3 {
+  display: flex;
+  /* font: 700 18px/1.25 "Poppins",sans-serif; */
+  letter-spacing: 0.9px;
+  color: #000203;
+  align-items: center;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.flexH3 {
+  display: flex;
+  /* font: 700 18px/1.25 "Poppins",sans-serif; */
+  letter-spacing: 0.9px;
+  color: #000203;
+  align-items: center;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.how-to-section .description {
+  display: block;
+}
+.how-to-section-description {
+  display: block;
+  /* font: 400 16px/1.6 "Poppins",sans-serif; */
+  color: #000203;
+  letter-spacing: 0px;
+}
+
+/* END */
+
 .formDiv h3 {
 
     font-size: 1.6rem;
@@ -210,4 +295,8 @@ nav {
 
 .btn--blue::after {
     background-color: rgb(255, 100, 100);
+}
+
+#pred {
+    padding: 5rem;
 }
