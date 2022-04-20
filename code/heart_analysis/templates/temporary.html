@@ -11,21 +11,33 @@
 </head>
 <body>
 
-    <div id="pred">
-        {%for key,value in lstm.items%}
-            <p>{{key}}:</p>
-            <p>{{value}}</p>
-        {% endfor%}
+    <nav>
+        <div class="navbar">
+            <!-- <img class="logo" src="/" alt="logo" /> -->
+            <!-- <h1 class="logo">Logo</h1> -->
+            <h1 class="logo">Heart Beat Analysis</h1>
+        </div>
+        <ul class="nav_links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#analyze">Analyze!</a></li>
+            <!-- <li class="signup_li"><a class="signup" href="/signup">Sign Up</a></li>
+          <li class="login_li"><a class="login" href="/login">login</a></li> -->
+        </ul>
+    </nav>
+
+    <div class="prediction">
+        <div class="pred">
+            {%for key,value in lstm.items%}
+                <p class="key">{{key}}:</p>
+                <p class="value">{{value}}</p>
+            {% endfor%}
+        </div>
+
     </div>
  
-    
-
     <!-- <p>
         {{inputFile}}
     </p> -->
 
-
-
- 
 </body>
 </html>

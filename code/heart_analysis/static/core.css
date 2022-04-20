@@ -74,7 +74,7 @@ nav {
     display: inline-block;
     border: none;
     color: #fff;
-    background-color: rgb(250, 52, 52); 
+    background-color: rgb(250, 52, 52);
     box-shadow: 0 1px 3px 0 rgb(f f f / 12%);
     padding: 0 2rem;
     height: 40px;
@@ -86,8 +86,8 @@ nav {
 }
 
 .login_li a:hover {
-    border-color: #000!important;
-    color: #000!important;
+    border-color: #000 !important;
+    color: #000 !important;
 }
 
 .signup_li a:hover {
@@ -129,13 +129,13 @@ nav {
     }
 }
 
-.basic{
+.basic {
     height: 24.8rem;
     width: 90rem;
-    background-color:rgb(247, 247, 247);
+    background-color: rgb(247, 247, 247);
 }
 
-.heart-img{
+.heart-img {
     position: relative;
     right: 20rem;
 }
@@ -147,79 +147,161 @@ nav {
     font: 400 16px/1.6;
     color: #000203;
     letter-spacing: 0px;
-  }
-  .full-block {
+}
+
+.full-block {
     padding: 30px 20px 20px;
-  }
-  .title-section {
+}
+
+.title-section {
     display: block;
     text-align: center;
 }
+
+.title-description{
+    padding: 0rem 4rem 8rem;
+}
+
+.title-section h2 {
+    margin: 3rem 0rem;
+}
+
 .how-to-row:first-child {
-  padding: 0 0 50px;
+    padding: 0 0 50px;
 }
+
 .how-to-list {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 -15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
 }
+
 .how-to-item {
-  display: block;
-  max-width: 530px;
-  width: 100%;
-  padding: 0 15px;
-  text-align: left;
+    display: block;
+    max-width: 20rem;
+    max-height: 20rem;
+    width: 100%;
+    padding: 0 15px;
+    text-align: left;
 }
+
 .number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 43px;
-  min-width: 43px;
-  height: 43px;
-  border-radius: 50%;
-  border: 2px solid;
-  /* font: 700 17px/1 "Poppins",sans-serif; */
-  letter-spacing: 0.34px;
-  margin: 0px 16px 0 0;
-  border-color: #141850;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    min-width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    border: 2px solid;
+    /* font: 700 17px/1 "Poppins",sans-serif; */
+    letter-spacing: 0.34px;
+    margin: 0px 16px 0 0;
+    border-color: #141850;
 }
+
 .number {
-  color: #141850;
+    color: #141850;
 }
+
 .number {
-  border-color: #141850;
+    border-color: #141850;
 }
+
 .how-to-section .how-to-item .item-title h3 {
-  display: flex;
-  /* font: 700 18px/1.25 "Poppins",sans-serif; */
-  letter-spacing: 0.9px;
-  color: #000203;
-  align-items: center;
-  vertical-align: baseline;
-  margin: 0;
-  padding: 0;
-  border: 0;
+    display: flex;
+    /* font: 700 18px/1.25 "Poppins",sans-serif; */
+    letter-spacing: 0.9px;
+    color: #000203;
+    align-items: center;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
+
 .flexH3 {
-  display: flex;
-  /* font: 700 18px/1.25 "Poppins",sans-serif; */
-  letter-spacing: 0.9px;
-  color: #000203;
-  align-items: center;
-  vertical-align: baseline;
-  margin: 0;
-  padding: 0;
-  border: 0;
+    display: flex;
+    /* font: 700 18px/1.25 "Poppins",sans-serif; */
+    letter-spacing: 0.9px;
+    color: #000203;
+    align-items: center;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
+
 .how-to-section .description {
-  display: block;
+    display: block;
 }
+
 .how-to-section-description {
-  display: block;
-  /* font: 400 16px/1.6 "Poppins",sans-serif; */
-  color: #000203;
-  letter-spacing: 0px;
+    display: block;
+    /* font: 400 16px/1.6 "Poppins",sans-serif; */
+    color: #000203;
+    letter-spacing: 0px;
+}
+
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+
+#features {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #fff;
+}
+
+.row {
+    background-color: #fff;
+    margin: 4rem;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive columns */
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* @media screen and (max-width: 800px) {
+    .card-grp {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+} */
+
+
+/* Style the counter cards */
+.card {
+    background-image: linear-gradient(to right bottom, rgba(255, 100, 100, 0.8), rgba(250, 52, 52, 0.8)), url(/static/images/heart-image.png);
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    max-width: 25rem;
+    min-width: 10rem;
+    height: 24rem;
+    text-align: center;
+    background-color: #f1f1f1;
 }
 
 /* END */
@@ -297,6 +379,22 @@ nav {
     background-color: rgb(255, 100, 100);
 }
 
-#pred {
+.pred {
+    background-color: #fff;
+    text-align: center;
     padding: 5rem;
 }
+.prediction{
+    height: 40rem;
+    text-align: center;
+}
+
+
+.key {
+    /* pending */
+  
+  }
+  
+  .value {
+    /* pending */
+  }
