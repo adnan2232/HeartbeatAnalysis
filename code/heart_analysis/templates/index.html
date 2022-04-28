@@ -28,6 +28,7 @@
           <li class="login_li"><a class="login" href="/login">login</a></li> -->
         </ul>
     </nav>
+    <hr>
 
     <!-- <div class="basic">
         <img class="heart-img" src="static/images/herat-img3.jpg" alt="">
@@ -45,9 +46,11 @@
                 blood through it. In healthy adults, there are two normal heart sounds, often described as a lub and a
                 dub
                 (or dup), that occur in sequence with each heartbeat. </p>
+            <br>
             <p class="description">These are the first heart sound (S1) and second heart sound (S2), produced by the
                 closing
                 of the atrioventricular valves and semilunar valves, respectively.</p>
+            <br>
             <p class="description">Heart irregularities are commonly detected using a stethoscope by a physician.
                 Currently, there are digital stethoscopes and mobile devices that anyone can use to record their heart sounds, however, 
                 without medical knowledge, it will be difficult for them to know if there are any irregularities.</p>
@@ -68,17 +71,18 @@
             <div class="card-grp">
                 <div class="column">
                     <div class="card">
-                        <h3>Converting Audio Signals to Digital Signals</h3>
-                        <p>Some text</p>
-                        <p>Some text</p>
+                        <h3 id="first_step">Converting Audio Signals to Digital Signals</h3>
+                        <hr>
+                        <p>Firstly, we take the audio files and convert it into digital signals to use the features of the audio signal like amplitude, frequency, etc.</p>
+                        <p>Then we change the digital signals from amplitude-time domain to frequency-time domain.</p>
                     </div>
                 </div>
 
                 <div class="column">
                     <div class="card">
                         <h3>De-noising the Signals</h3>
-                        <p>Some text</p>
-                        <p>Some text</p>
+                        <hr>
+                        <p>These signals are then pass on to a function called bandpass filter function which reduces the noise of the data.</p>
                     </div>
                 </div>
             </div>
@@ -87,16 +91,18 @@
                 <div class="column">
                     <div class="card">
                         <h3>Calculating MFCC values</h3>
-                        <p>Some text</p>
-                        <p>Some text</p>
+                        <hr>
+                        <p>MFCCs Stands for Mel Frequency Cepstrum Coefficients which is used for to extracting features from the audio signal and using it as input to base model will produce much better performance than directly considering raw audio signal as input.</p>
+                        
                     </div>
                 </div>
 
                 <div class="column">
                     <div class="card">
                         <h3>Model Building for Analysis</h3>
-                        <p>Some text</p>
-                        <p>Some text</p>
+                        <hr>
+                        <p>We train our models using the MFCC values to predict the category of the heart beats</p>
+                        
                     </div>
                 </div>
             </div>

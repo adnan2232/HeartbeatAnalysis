@@ -18,18 +18,18 @@
             <h1 class="logo">Heart Beat Analysis</h1>
         </div>
         <ul class="nav_links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#analyze">Analyze!</a></li>
+            <li><a href="http://127.0.0.1:8000/">Home</a></li>
             <!-- <li class="signup_li"><a class="signup" href="/signup">Sign Up</a></li>
           <li class="login_li"><a class="login" href="/login">login</a></li> -->
         </ul>
     </nav>
+    <hr>
 
     <div class="prediction">
         <div class="pred">
             {%for key,value in lstm.items%}
-                <p class="key">{{key}}:</p>
-                <p class="value">{{value}}</p>
+                <p class="key-val">{{key}}: {{value}}</p>
+                <!-- <p class="value">{{value}}</p> -->
             {% endfor%}
         </div>
 

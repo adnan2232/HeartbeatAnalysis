@@ -46,11 +46,11 @@ def temp(req):
     # print(mfccs.shape)
     
     val, idx = LSTM(y,sr)
-    
+    val = "%.2f"%val
     
     lstm = {
-        "category":idx,
-        "value":val
+        "Category":idx,
+        "Value":val
     }
     
 
